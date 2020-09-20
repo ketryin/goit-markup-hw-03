@@ -17,12 +17,21 @@ body{
   font-style: normal; 
   font-weight: 400;
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
   font-style: normal;
+}
+img {
+  display: block;
 }
 .title{
   font-style: normal;
@@ -45,6 +54,11 @@ body{
 .logo-accent-color{
   color:var( --accent-color);  
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 /* === HEADER === */
 .nav-list-items{
   font-weight: 500;
@@ -60,15 +74,15 @@ body{
 .indicator-page{
   color: var(--accent-color);
 }
-.nav-address-link{
+.header-address-link{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--description);
 }
-.nav-address-link:hover,
-.nav-address-link:active{
+.header-address-link:hover,
+.header-address-link:active{
   color: var(--accent-color);
 }
 /* === END HEADER === */
