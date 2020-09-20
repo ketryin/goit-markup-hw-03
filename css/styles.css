@@ -43,6 +43,7 @@ img {
   color: var(--subtitle)1;
 }
 .logo-link {
+    margin-right: 95px; 
     font-family: var(--logo-font);
     font-style: normal; 
     font-weight:700;
@@ -60,18 +61,41 @@ img {
   margin: 0 auto;
 }
 /* === HEADER === */
-.nav-list-items{
+.header{
+  padding: 25px 0;
+}
+.header .container {
+  display: flex;
+  align-items: center; 
+}
+.navigation{
+  display: flex;
+  align-items: center;
+}
+.nav-list{
+  display: flex;
+}
+.header-address{
+  display: flex;
+}
+.header .container .address{
+  margin-left: auto;
+}
+.nav-list-items .link{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--subtitle);
 }
-.nav-list-items:hover,
-.nav-list-items:active{
+.nav-list-items:not(:last-child){
+  margin-right: 50px;
+}
+.nav-list-items .link:hover,
+.nav-list-items .link:active{
   color: var(--accent-color);
 }
-.indicator-page{
+.nav-list-items .indicator-page{
   color: var(--accent-color);
 }
 .header-address-link{
@@ -81,6 +105,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--description);
 }
+.header-address-items:not(:last-child){
+  margin-right: 50px;
+}
 .header-address-link:hover,
 .header-address-link:active{
   color: var(--accent-color);
@@ -89,7 +116,15 @@ img {
 
 /* === FOOTER === */
 .footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
+}
+.footer .container .logo-link{
+  margin-right: 0;
+}
+.address-list{
+  margin-top: 20px;
 }
 .address-list-item{
   font-size: 14px;
@@ -109,6 +144,11 @@ img {
 /* ========== MAIN PAGE ========== */
 /* === HERO === */
 .title-hero{
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -118,11 +158,18 @@ img {
   /* color:var(--title-dark-theme-color); */
 }
 .button-hero{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px solid var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -131,7 +178,18 @@ img {
 }
 /* === END HERO === */
 /* === OUR ADVANTAGES === */
+.our-advantages .container .list{
+  margin: 95px 0;
+  display: flex;
+}
+.advantages-list-item{
+  max-width: 270px;
+}
+.advantages-list-item:not(:last-child){
+  margin-right: 30px;
+}
 .advantages-list-title{
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -148,10 +206,29 @@ img {
 /* === END OUR ADVANTAGES === */
 
 /* === SERVICES === */
+.services .container .title{
+  margin-bottom: 40px;
+}
+.services-list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+}
 /* === END SERVICES === */
 
 /* === ABOUT US === */
+.about-us .container .title{
+  margin-top: 95px;
+  margin-bottom: 50px;
+}
+.about-us-list{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+}
 .about-us-title{
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -160,6 +237,7 @@ img {
   color: var(--subtitle);
 }
 .about-us-description{
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
