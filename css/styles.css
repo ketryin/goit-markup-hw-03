@@ -11,6 +11,7 @@
   --description-dark-theme-color: #ffffff;
   --background-button: #F5F4FA;
   --footer-background-color: #2F303A;
+  --about-us-background-color:#F5F4FA;
 }
 body{
   font-family: var(--main-font);
@@ -62,6 +63,7 @@ img {
 }
 /* === HEADER === */
 .header{
+  border-bottom: 1px solid #ECECEC;
   padding: 25px 0;
 }
 .header .container {
@@ -143,11 +145,15 @@ img {
 /* === END FOOTER === */
 /* ========== MAIN PAGE ========== */
 /* === HERO === */
+.hero {
+  background-color: var(--footer-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .title-hero{
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -155,13 +161,12 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color:var(--title-dark-theme-color); */
+  color:var(--title-dark-theme-color); 
 }
 .button-hero{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -178,8 +183,10 @@ img {
 }
 /* === END HERO === */
 /* === OUR ADVANTAGES === */
+.our-advantages{
+  padding: 95px 0;
+}
 .our-advantages .container .list{
-  margin: 95px 0;
   display: flex;
 }
 .advantages-list-item{
@@ -206,25 +213,29 @@ img {
 /* === END OUR ADVANTAGES === */
 
 /* === SERVICES === */
+.services{
+  padding-bottom: 95px;
+}
 .services .container .title{
   margin-bottom: 40px;
 }
 .services-list{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
 }
 /* === END SERVICES === */
 
 /* === ABOUT US === */
+.about-us{
+  background-color: var(--about-us-background-color); 
+  padding: 95px 0;
+}
 .about-us .container .title{
-  margin-top: 95px;
   margin-bottom: 50px;
 }
 .about-us-list{
   display:flex;
   justify-content: space-between;
-  margin-bottom: 95px;
 }
 .about-us-title{
   margin-top: 30px;
@@ -243,17 +254,20 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--description);
-}
+} 
 /* === END ABOUT US === */
 /* ========== END MAIN PAGE ========== */
 
 /* ========== PORTFOLIO PAGE ========== */
 /* === PORTFOLIO === */
+.portfolio {
+  padding-top: 75px;
+  padding-bottom: 95px;
+}
      /* === BUTTON LIST === */
 .button-list{
   display: flex;
   justify-content: center;
-  margin-top: 95px;
   margin-bottom: 50px;
 }
 .button-list-item:not(:last-child){
@@ -277,12 +291,11 @@ img {
 }
       /* === PORTFOLIO LIST === */
 .portfolio-list{
-  margin-bottom: 95px;
-
   display: flex;
   flex-wrap: wrap;
 }
 .portfolio-list-item{
+  border: 1px solid #EEEEEE;
   width: 370px;
 }
 .portfolio-list-item:not(:nth-child(3n)){
